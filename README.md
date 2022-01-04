@@ -52,7 +52,7 @@ Now you can output the stage endpoint with `mantil env -u`. The API endpoint for
 
 ## Generating presigned S3 upload url
 
-To generate presigned S3 upload url for your file you will need to make a request to function API endpoint specifiying name the file will have in your bucket.
+To generate presigned S3 upload url for your file you will need to make a request to function API endpoint specifying name the file will have in your bucket in the request body. You can make a request either directly through endpoint URL outlined in the section above or with `mantil invoke`.
 
 ```
 mantil invoke upload -d "name_of_the_file"
