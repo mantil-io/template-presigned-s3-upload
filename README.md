@@ -61,7 +61,7 @@ mantil invoke upload -d "name_of_the_file"
 Response will contain presigned upload url which you can then use to upload file to the bucket.
 
 ```
-curl _generated link_ --upload-file _file you wish to upload_
+curl (generated link) --upload-file (file you wish to upload)
 ```
 
 ## Cleanup
