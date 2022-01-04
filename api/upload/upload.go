@@ -16,23 +16,19 @@ const (
 
 type Upload struct{}
 
-type Request struct {
-	Key string `json:"key"`
-}
-
 func New() *Upload {
 	return &Upload{}
 }
 
-func (u *Upload) Default(ctx context.Context, req *Request) (string, error) {
+func (u *Upload) Default(ctx context.Context, key string) (string, error) {
 	bucket, ok := os.LookupEnv(BucketEnv)
 	if !ok {
 		return "", fmt.Errorf("bucket not set")
 	}
-	if req.Key == "" {
+	if key == "" {
 		return "", fmt.Errorf("key not specified in request")
 	}
-	url, err := uploadURL(bucket, req.Key)
+	url, err := uploadURL(bucket, key)
 	return url, err
 }
 
