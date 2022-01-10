@@ -1,3 +1,7 @@
+## About
+
+This template shows how to use AWS Lambda deployed through Mantil to upload files to S3 bucket without having direct access to the AWS account or the bucket using presigned urls.
+
 ## Prerequisites
 
 This template is created with Mantil. To download [Mantil CLI](https://github.com/mantil-io/mantil#installation) on Mac or Linux use Homebrew
@@ -9,8 +13,7 @@ brew install mantil
 
 or check [direct download links](https://github.com/mantil-io/mantil#installation).
 
-To deploy this application you will need:
-- An [AWS account](https://aws.amazon.com/premiumsupport/knowledge-center/create-and-activate-aws-account/)
+To deploy this application you will need an [AWS account](https://aws.amazon.com/premiumsupport/knowledge-center/create-and-activate-aws-account/).
 
 ## Installation
 
