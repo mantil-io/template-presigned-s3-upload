@@ -10,7 +10,6 @@ require (
 	github.com/aws/aws-sdk-go-v2/service/lambda v1.13.0 // indirect
 	github.com/aws/aws-sdk-go-v2/service/s3 v1.19.1
 	github.com/golang/protobuf v1.5.2 // indirect
-	github.com/golang/snappy v0.0.3 // indirect
 	github.com/mantil-io/mantil.go v0.1.13
 	golang.org/x/xerrors v0.0.0-20200804184101-5ec99f83aff1 // indirect
 	gopkg.in/yaml.v2 v2.4.0 // indirect
